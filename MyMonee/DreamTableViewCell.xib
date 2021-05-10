@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="DreamTableViewCell" customModule="MyMonee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="UITableViewCell">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hdm-7Q-J02">
+                        <rect key="frame" x="23" y="33" width="385" height="54"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zW1-27-JFM">
+                                <rect key="frame" x="0.0" y="0.0" width="385" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqA-ik-rDZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWN-TQ-F0z">
+                                        <rect key="frame" x="361" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="w6z-Rr-thB"/>
+                                        </constraints>
+                                        <state key="normal" image="ant-design_close-circle-outlined"/>
+                                        <connections>
+                                            <action selector="btnDelete:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p8E-hY-T4y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OqA-ik-rDZ" firstAttribute="leading" secondItem="zW1-27-JFM" secondAttribute="leading" id="6Ls-8B-2ec"/>
+                                    <constraint firstItem="OqA-ik-rDZ" firstAttribute="top" secondItem="zW1-27-JFM" secondAttribute="top" id="SAD-9O-Yp8"/>
+                                    <constraint firstAttribute="bottom" secondItem="KWN-TQ-F0z" secondAttribute="bottom" id="aAq-cR-DHI"/>
+                                    <constraint firstItem="KWN-TQ-F0z" firstAttribute="leading" secondItem="OqA-ik-rDZ" secondAttribute="trailing" id="d9X-P0-g1j"/>
+                                    <constraint firstAttribute="trailing" secondItem="KWN-TQ-F0z" secondAttribute="trailing" id="dY9-TG-DPj"/>
+                                    <constraint firstAttribute="bottom" secondItem="OqA-ik-rDZ" secondAttribute="bottom" id="psl-JY-jL1"/>
+                                    <constraint firstItem="KWN-TQ-F0z" firstAttribute="top" secondItem="zW1-27-JFM" secondAttribute="top" id="tX5-XZ-Npc"/>
+                                </constraints>
+                            </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="cMH-4z-lR3">
+                                <rect key="frame" x="0.0" y="24" width="385" height="4"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6L-WD-oHl">
+                                <rect key="frame" x="0.0" y="28" width="385" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="385" id="sb8-be-ng1"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hdm-7Q-J02" secondAttribute="trailing" constant="22" id="Eji-AZ-yyR"/>
+                    <constraint firstAttribute="bottom" secondItem="hdm-7Q-J02" secondAttribute="bottom" constant="33" id="bCC-8r-yLH"/>
+                    <constraint firstItem="hdm-7Q-J02" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="33" id="fiq-eF-Acf"/>
+                    <constraint firstItem="hdm-7Q-J02" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="hLz-JJ-YNk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dreamExpense" destination="R6L-WD-oHl" id="ES9-td-SK3"/>
+                <outlet property="dreamName" destination="OqA-ik-rDZ" id="Bs3-ZM-Wzu"/>
+                <outlet property="dreamProgressBar" destination="cMH-4z-lR3" id="S2j-L3-05w"/>
+            </connections>
+            <point key="canvasLocation" x="150.72463768115944" y="116.51785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ant-design_close-circle-outlined" width="24" height="24"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

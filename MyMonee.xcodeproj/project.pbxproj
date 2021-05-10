@@ -10,9 +10,13 @@
 		FA07BD182642585E00661980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BD172642585E00661980 /* AppDelegate.swift */; };
 		FA07BD1A2642585E00661980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BD192642585E00661980 /* SceneDelegate.swift */; };
 		FA07BD1C2642585E00661980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07BD1B2642585E00661980 /* ViewController.swift */; };
-		FA07BD1F2642585E00661980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA07BD1D2642585E00661980 /* Main.storyboard */; };
 		FA07BD212642585F00661980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA07BD202642585F00661980 /* Assets.xcassets */; };
 		FA07BD242642585F00661980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA07BD222642585F00661980 /* LaunchScreen.storyboard */; };
+		FA07BD2D26425A4500661980 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA07BD2C26425A4500661980 /* Media.xcassets */; };
+		FA07BD31264265E000661980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA07BD30264265E000661980 /* Main.storyboard */; };
+		FA4165552647D9A4003485ED /* DreamRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4165542647D9A4003485ED /* DreamRowController.swift */; };
+		FA4165592647DAF2003485ED /* DreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4165572647DAF2003485ED /* DreamTableViewCell.swift */; };
+		FA41655A2647DAF2003485ED /* DreamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4165582647DAF2003485ED /* DreamTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,14 @@
 		FA07BD172642585E00661980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA07BD192642585E00661980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA07BD1B2642585E00661980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA07BD1E2642585E00661980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA07BD202642585F00661980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA07BD232642585F00661980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA07BD252642585F00661980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA07BD2C26425A4500661980 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		FA07BD30264265E000661980 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		FA4165542647D9A4003485ED /* DreamRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamRowController.swift; sourceTree = "<group>"; };
+		FA4165572647DAF2003485ED /* DreamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTableViewCell.swift; sourceTree = "<group>"; };
+		FA4165582647DAF2003485ED /* DreamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DreamTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		FA07BD0B2642585E00661980 = {
 			isa = PBXGroup;
 			children = (
+				FA07BD2C26425A4500661980 /* Media.xcassets */,
 				FA07BD162642585E00661980 /* MyMonee */,
 				FA07BD152642585E00661980 /* Products */,
 			);
@@ -59,10 +68,13 @@
 				FA07BD172642585E00661980 /* AppDelegate.swift */,
 				FA07BD192642585E00661980 /* SceneDelegate.swift */,
 				FA07BD1B2642585E00661980 /* ViewController.swift */,
-				FA07BD1D2642585E00661980 /* Main.storyboard */,
+				FA07BD30264265E000661980 /* Main.storyboard */,
 				FA07BD202642585F00661980 /* Assets.xcassets */,
 				FA07BD222642585F00661980 /* LaunchScreen.storyboard */,
 				FA07BD252642585F00661980 /* Info.plist */,
+				FA4165542647D9A4003485ED /* DreamRowController.swift */,
+				FA4165572647DAF2003485ED /* DreamTableViewCell.swift */,
+				FA4165582647DAF2003485ED /* DreamTableViewCell.xib */,
 			);
 			path = MyMonee;
 			sourceTree = "<group>";
@@ -124,9 +136,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA41655A2647DAF2003485ED /* DreamTableViewCell.xib in Resources */,
 				FA07BD242642585F00661980 /* LaunchScreen.storyboard in Resources */,
 				FA07BD212642585F00661980 /* Assets.xcassets in Resources */,
-				FA07BD1F2642585E00661980 /* Main.storyboard in Resources */,
+				FA07BD2D26425A4500661980 /* Media.xcassets in Resources */,
+				FA07BD31264265E000661980 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4165592647DAF2003485ED /* DreamTableViewCell.swift in Sources */,
+				FA4165552647D9A4003485ED /* DreamRowController.swift in Sources */,
 				FA07BD1C2642585E00661980 /* ViewController.swift in Sources */,
 				FA07BD182642585E00661980 /* AppDelegate.swift in Sources */,
 				FA07BD1A2642585E00661980 /* SceneDelegate.swift in Sources */,
@@ -146,14 +162,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA07BD1D2642585E00661980 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA07BD1E2642585E00661980 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA07BD222642585F00661980 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
